@@ -16,3 +16,5 @@ If the search time was found, a vertical dashed line is added to mark the specif
 Using the pyproj library, the script converts the raw latitude and longitude coordinates from WGS84 Lat/Lon (datum='WGS84', to UTM Zone 33 (datum='WGS84', proj='utm', zone='33'). The transformed Easting and Northing coordinates are stored for trajectory plotting.
 
 Finally, a separate figure is created to visualize the geospatial trajectory of the survey: The plot displays the Northing vs. Easting coordinates in the UTM projection. The trajectory is plotted as a continuous cyan line.If the time-based search was successful, the corresponding data point is explicitly marked with a black circle on the trajectory map.
+
+Author: Alessandro Pavan
