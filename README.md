@@ -5,7 +5,7 @@ Time Series Data: Complete date and time strings (datetime_list), raw latitude (
 Altitude Data: Altitude (alt) and its corresponding datetime stamp (datetime_alt) are only extracted if the altitude field is non-empty, indicating valid GPS-GGA (Global Positioning System - Global Positioning data) information. The number of satellites (nsat) is also stored for these records.
 Time Conversion: The collected datetime strings are converted into a pandas.DatetimeIndex (df and df2) for accurate time-series plotting.
 
-A custom function, find_index_by_time, is defined to locate the index of the first data point matching a predefined time string (time_to_search = '9:44:20.000'). The script executes this search and prints the result, which is crucial for highlighting a specific event on the subsequent plots.
+A custom function, find_index_by_time, is defined to locate the index of the first data point matching a predefined time string (time_to_search). The script executes this search and prints the result, which is crucial for highlighting a specific event on the subsequent plots.
 
 The script generates a single figure with two distinct Y-axes sharing a common X-axis (time):
 Primary Axis (Left - Green): Plots the Magnetic field values (mag) over time.
